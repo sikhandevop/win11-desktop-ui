@@ -2,17 +2,17 @@ import "firebase/compat/auth";
 import firebase from "firebase/compat/app";
 
 firebase.initializeApp({
-  apiKey: "AIzaSyBdZVIp08RqYKc2s88MfH6B8eiwIeK8mpI",
-  authDomain: "auth.win11react.com",
-  projectId: "win11react",
-  storageBucket: "auth.win11react.com",
-  messagingSenderId: "213452110834",
-  appId: "1:213452110834:web:3a7c957763b93cc29e096b",
-  measurementId: "G-N7CJ22ZMSJ",
-});
+	apiKey: 'AIzaSyAw82pxy8IjTroa9BwjRs05L7x7w1v3abA',
+	authDomain: 'win-11-ui.firebaseapp.com',
+	projectId: 'win-11-ui',
+	storageBucket: 'win-11-ui.appspot.com',
+	messagingSenderId: '597762564198',
+	appId: '1:597762564198:web:27230c0ef2fe6d08298da7',
+	measurementId: 'G-ZC324SZFRP',
+})
 
-const auth = firebase.auth();
-const githubLoginProvider = new firebase.auth.GithubAuthProvider();
+const auth = firebase.auth()
+const githubLoginProvider = new firebase.auth.GithubAuthProvider()
 
 async function login() {
   auth.signInWithPopup(githubLoginProvider).then((res) => {
